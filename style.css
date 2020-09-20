@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {padding: 0px;
+  margin:0px ;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5;
+  background-color: #333;
+}
+.text-primary{
+  color:#93cb52
+}
+#navbar{
+  display: flex;
+  position: sticky;
+  top:0;
+  background-color:rgb(51, 51, 51,0,4);
+  color:#fff;
+  justify-content: space-between;
+ padding: 1rem;
+
+}
+#navbar ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+
+}
+#navbar ul a{
+  color: blanchedalmond;
+  margin: 0 0.25rem ;
+ padding: 0.75rem;
+}
+#navbar ul a:hover
+ { background-color: #93cb52;
+border-radius: 5px;
+
+}
+#show-case{
+  background-image:url(showcase1.jpg)  ;
+background-repeat: no-repeat;
+background-size:center ;
+height: 150vh;
+width: 220vh;
+
+}
+#show-case .showcase-content{
+
+  display: flex;
+  flex-direction: column;
+text-align: center;
+align-items: center;
+height: 700px;
+width: 1500px;
+
+}
+.l-heading{
+font-size: 4rem;
+margin-bottom: .75rem;
+line-height: 1.2;
+}
+.lead{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.btn{
+  display: inline-block;
+  color: white;
+  background-color: royalblue;
+padding: 0.5rem 2rem;
+}
+
+.about{
+  align-items: center;
+}
+#who{
+ background-color: seashell;
+
+}
+.text-center{
+  text-align: center;
+  margin: 0 0.25rem ;
+ padding: 0.75rem;
+}
+.container{
+
+  display: flex;
+  justify-content: space-between;
+ 
+
+}
+.art{
+  flex-direction: column;
+  width: 22%;
+  border: 1px solid slategray ;
+  margin: 0 0.25rem ;
+ padding: 0.75rem;
+
+}
+.backg{
+  background: url(sign-in.jpg);
+  background-size:cover;
+}
+.loginbox{
+  width: 400px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+padding: 70px 30px;
+  
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 45px;
+}
+.loginbox p{
+  margin: 0;
+  padding: 0;
+  font-size:  25px; 
+  
+}
+.loginbox input{
+  width: 50%;
+margin-bottom: 20px;
+}
+.loginbox input[type="username"],input[type="password"]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.loginbox input[type="submit"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: cadetblue;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+  cursor: pointer;
+  background:gray ;
+  color: #000;
+
+}
+.loginbox a{
+  text-decoration: none;
+  font-size: 15px;
+  color: darkgray;
+}
+.backgforget{
+  background: url(sign-in.jpg);
+  background-size:cover;
+}
+.forgetbox{
+  width: 400px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+padding: 70px 30px;
+  
+}
+.fg{
+  font-size: 50px;
+
+
+
+
+
+
+}
+.adm{
+  background-color:dimgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.container1{
+  background-color: floralwhite;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0, 0.3);
+  width: 400px;
+  height: 900px;
+  max-width: 100%;
+  
+}
+.header1 h2{
+  background-color: steelblue;
+border-bottom: 1px solid #f0f0f0 ;
+padding: 17px 40px;
+}
+.form{
+  padding: 20px 40px;
+}
+.formcontrol{
+  margin-bottom: 10px;
+  padding-bottom:20px;
+  position: relative;
+}
+.formcontrol label{
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.formcontrol input{
+  border: 2px solid #fff;
+border: radius 4px; ;
+  display: block;
+font-family: inherit;
+font-size: 13px;
+padding: 10px;
+width: 100%;
+}
+.formcontrol.success input{
+  border-color:#93cb52 ;
+}
+.formcontrol.error input{
+  border-color:#e74c3c ;
+}
+
+.formcontrol i{
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  visibility: hidden;
+}
+.formcontrol.success i.fa-check-circle{
+  color: #2ecc71; ;
+  visibility: visible;
+}
+.formcontrol.error i.fa-exclamation-circle{
+  color:#e74c3c ; ;
+  visibility: visible;
+}
+
+
+.formcontrol small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.formcontrol.error small{
+  color: #e74c3c;
+  visibility: visible;
+}
+.form button{
+  background-color: dimgray;
+  border: 2x solid dimgray;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
